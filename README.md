@@ -1,32 +1,103 @@
-npm package link: https://www.npmjs.com/package/reactdarkmodeplugin
+
+# React DarkMode Plugin
+
+This is a react dark mode plugin which can be used in any project using tailwindcss to enable dark mode
 
 
-Note: This library is for React with Tailwind css projects using ROllup
+## License
 
-#using React Dark Mode Plugin in your project:
-
-1: Install the library in your React + Tailwind Project.
-
-2: Go to Tailwind.config.js and add property darkMode: 'class' in the object exported (module.exports).
-
-3: Now in your tailwind classes add dark: and type your required styling for dark mode Example:className="flex bg-blue-200 dark:bg-blue-800", these will be applied automatically if you are already in default dark mode, you can check the switch toggle component on UI from this library, if you turn off the dark mode, classes after dark: will no longer be applicable.
-
-4: Import it in your file by import DarkModePlugin from 'reactdarkmodeplugin';
-
-5: Use it in your project by using default styles of the component, if you want to give customized styles use props:
-   
-   . containerClassName: use this prop and provide custom styles for container of the component
-
-   . sunClassName: use this prop and provide customm styles for light mode or sun icon used in the component
-
-   . moonClassName: use this prop and provide customm styles for dark mode or moon icon used in the component    
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
+## Screenshots
 
 Component Light Mode:
 
-![alt text](<Screenshot 2024-04-26 223615.png>)
+![App Screenshot](https://github.com/MoeezAmir12/ReactDarkModePluginRollup/blob/main/Screenshot%202024-04-26%20223615.png)
 
 Component Dark Mode:
 
-![alt text](<Screenshot 2024-04-26 223648.png>)
+![App Screenshot](https://github.com/MoeezAmir12/ReactDarkModePluginRollup/blob/main/Screenshot%202024-04-26%20223648.png)
+
+
+
+
+## Installation
+
+1: Install the library in your React + Tailwind Project.
+
+```bash
+  npm install reactdarkmodeplugin
+```
+
+2: Go to Tailwind.config.js and add property darkMode: 'class' in the object exported (module.exports).
+
+```bash
+  const plugin = require('tailwindcss/plugin')
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}",],
+  darkMode: 'class',
+  theme: {
+    extend: {textShadow: {
+      sm: '0 1px 2px var(--tw-shadow-color)',
+      DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+      lg: '0 8px 16px var(--tw-shadow-color)',
+    },},
+  },
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ]
+}
+
+```
+
+3: Now in your tailwind classes add dark: and type your required styling for dark mode, these will be applied automatically if you are already in default dark mode, you can check the switch toggle component on UI from this library, if you turn off the dark mode, classes of dark: will no longer be applicable. Example:
+
+```bash
+  <div data-testid="DarkModePlugin_Container" className="flex flex-row w-fit h-fit gap-1 p-[0.4rem] items-center rounded-full border-2 shadow-md shadow-gray-500 border-indigo-400 dark:bg-slate-700 dark:shadow-gray-700 dark:border-indigo-700 bg-slate-200">
+```
+
+4: Import and use without props for default styling coming from component itself:
+
+```bash
+  import DarkModePlugin from 'reactdarkmodeplugin';
+
+  <DarkModePlugin/>
+```
+
+5: Use with props for custom styling using tailwindcss:
+
+```bash
+  <DarkModePlugin
+   containerClassName='bg-blue-500'
+   sunClassName='text-[1rem] text-yellow-200'
+   moonClassName='text-[1rem] text-purple-300'
+  />
+```
+
+## Features
+
+- Light/dark mode toggle
+- Default mode apply from browser
+- Dark class for custom css to be used for dark mode 
+
+
+## Demo
+
+Insert gif or link to demo
+
+https://github.com/MoeezAmir12/ReactDarkModePluginRollup/blob/main/src/Desktop2024.04.27-00.52.37.04-ezgif.com-crop.gif
+## Authors
+
+- [@MoeezAmir12](https://github.com/MoeezAmir12)
+
