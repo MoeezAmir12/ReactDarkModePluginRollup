@@ -21,3 +21,12 @@ Note: This library is for React with Tailwind css projects using ROllup
 
    . moonClassName: use this prop and provide customm styles for dark mode or moon icon used in the component    
 
+
+
+Component Light Mode:
+
+![alt text](<Screenshot 2024-04-26 223615.png>)
+
+Component Dark Mode:
+
+![alt text](<Screenshot 2024-04-26 223648.png>)
