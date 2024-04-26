@@ -1,3 +1,6 @@
+npm package link: https://www.npmjs.com/package/reactdarkmodeplugin
+
+
 Note: This library is for React with Tailwind css projects using ROllup
 
 #using React Dark Mode Plugin in your project:
