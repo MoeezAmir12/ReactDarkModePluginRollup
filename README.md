@@ -1,4 +1,4 @@
-Note: This library is for React with Tailwind css projects
+Note: This library is for React with Tailwind css projects using ROllup
 
 #using React Dark Mode Plugin in your project:
 
