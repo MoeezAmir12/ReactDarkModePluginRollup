@@ -37,7 +37,7 @@ const DarkModePlugin = (props:IDarkModePlugin) => {
   return (
     <div data-testid="DarkModePlugin_Container" className={props.containerClassName ? props.containerClassName : "flex flex-row w-fit h-fit gap-1 p-[0.4rem] items-center rounded-full border-2 border-indigo-400 dark:bg-slate-700 dark:border-indigo-700 bg-slate-200"}>
     <IoSunny
-     className={props.sunClassName ? props.sunClassName : 'text-[#f5b027] !text-[1.3rem] dark:text-[#fdf4e2f1]'}
+     className={props.sunClassName ? props.sunClassName : 'text-[#f5b027] !text-[1.3rem] dark:text-[#f8f5eee0]'}
     />
      <Switch
      size='small'
@@ -51,7 +51,7 @@ const DarkModePlugin = (props:IDarkModePlugin) => {
       }}
      />
      <IoMoon
-     className={props.moonClassName ? props.moonClassName : '!text-[1.3rem] text-[#e4cbf4ce] dark:text-[#492761]'}
+     className={props.moonClassName ? props.moonClassName : '!text-[1.3rem] text-[#e4cbf4ce] dark:text-[#844aad]'}
      />
     </div>
   );
