@@ -67,7 +67,7 @@ module.exports = {
   <div data-testid="DarkModePlugin_Container" className="flex flex-row w-fit h-fit gap-1 p-[0.4rem] items-center rounded-full border-2 shadow-md shadow-gray-500 border-indigo-400 dark:bg-slate-700 dark:shadow-gray-700 dark:border-indigo-700 bg-slate-200">
 ```
 
-4: Import and use without props for default styling coming from component itself:
+4: Import and use it in your navbar to be used with the whole project, without props for default styling coming from component itself:
 
 ```bash
   import DarkModePlugin from 'reactdarkmodeplugin';
