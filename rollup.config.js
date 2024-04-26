@@ -11,7 +11,7 @@ export default defineConfig({
   output: {
     dir: "dist",
     format: "esm",
-    name: "reactdarkmodeplugin",
+    name: "reactdarkmodecomponent",
   },
   external: ["react", "react-dom","@emotion/react","@emotion/styled","@mui/icons-material","@mui/material","react-icons","react-icons/io5","@tailwind base"],
   plugins: [typescript({ tsconfig: "tsconfig.json" }), postcss({

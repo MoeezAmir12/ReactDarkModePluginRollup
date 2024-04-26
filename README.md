@@ -1,7 +1,7 @@
 
-# React DarkMode Plugin
+# React DarkMode Component
 
-This is a react dark mode plugin which can be used in any project using tailwindcss to enable dark mode
+This is a react dark mode component which can be used in any project using tailwindcss to enable dark mode
 
 
 ## License
@@ -70,7 +70,7 @@ module.exports = {
 4: Import and use it in your navbar to be used with the whole project, without props for default styling coming from component itself:
 
 ```bash
-  import DarkModePlugin from 'reactdarkmodeplugin';
+  import DarkModePlugin from 'reactdarkmodecomponent';
 
   <DarkModePlugin/>
 ```
