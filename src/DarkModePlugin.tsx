@@ -51,7 +51,7 @@ const DarkModePlugin = (props:IDarkModePlugin) => {
       }}
      />
      <IoMoon
-     className={props.moonClassName ? props.moonClassName : '!text-[1.3rem] text-[#e4cbf4ce] dark:text-[#844aad]'}
+     className={props.moonClassName ? props.moonClassName : '!text-[1.3rem] text-[#e4cbf4ce] dark:text-[#492761]'}
      />
     </div>
   );
