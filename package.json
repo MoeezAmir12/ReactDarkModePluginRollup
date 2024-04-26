@@ -1,7 +1,7 @@
 {
   "name": "reactdarkmodeplugin",
   "description": "This is a react dark mode plugin which can be used in any project to enable dark mode just add dark in your className for tailwindcss and write your styling for dark mode Example: <div className='flex text-xs dark:text-md'></div>",
-  "version": "1.8.7",
+  "version": "1.0.0",
   "main": "dist/DarkModePlugin.js",
   "types": "dist/DarkModePlugin.d.ts",
   "keywords": [
