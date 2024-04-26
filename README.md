@@ -27,7 +27,7 @@ Component Dark Mode:
 1: Install the library in your React + Tailwind Project.
 
 ```bash
-  npm install reactdarkmodeplugin
+  npm install reactdarkmodecomponent
 ```
 
 2: Go to Tailwind.config.js and add property darkMode: 'class' in the object exported (module.exports).
